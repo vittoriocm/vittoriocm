@@ -1,3 +1,4 @@
+/* ---------- General ---------- */
 * {
     padding: 0;
     margin: 0;
@@ -12,12 +13,14 @@ html {
     font-family: Geneva, sans-serif;
     display: flex;
     justify-content: center;
+    min-height: 98%;
+    margin: 0.25rem;
 }   
 
 h1 {
     text-align: center;
     font-size: 3rem;
-    margin: 1rem 0;
+    margin: 2rem 0 1rem 0;
 }
 
 a {
@@ -26,30 +29,62 @@ a {
 
 body {
     width: 80%;
+    border: 1px white solid;
 }
 
 @media screen and (max-width: 480px) {
     body {
-        width: 100%;
+        width: 98%;
     }
 }
 
-header ul {
-    display: flex;
-    justify-content: center;
+main {
+    margin: 2rem 0;
+}
+/* ---------- Nav Bar ---------- */
+
+nav {
+    border-bottom: 1px white solid;
 }
 
-header ul li {
+.lower-nav {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: .5rem;
+}
+
+header .nav-element {
     text-align: center;
-    margin: 1rem 3rem;
-    list-style-type: none;
     font-weight: bold;
     font-size: 1.5rem;
+}
+
+.current-page {
+    cursor: default;
 }
 
 a:hover {
     color: lightgrey;
 }
+
+.dropdown-content {
+    display: none;
+    position:absolute;
+}
+
+.dropdown:hover {
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+    display: grid;
+    columns: 1fr;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+/* ---------- Resume Page ---------- */
 
 .resume-pdf {
     width: 100%;
@@ -57,11 +92,12 @@ a:hover {
     aspect-ratio: 8.5/11;
 }
 
+/* ---------- Projects Page ---------- */
+
 .flex-container {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin: 1rem;
     flex-wrap: wrap;
 }
 

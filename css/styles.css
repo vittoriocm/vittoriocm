@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black; 
+    color: white; 
+}
+
+html {
+    font-family: Geneva, sans-serif;
+    display: flex;
+    justify-content: center;
+}   
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+body {
+    width: 80%;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+}
+
+header ul li {
+    text-align: center;
+    margin: 1rem 3rem;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+a:hover {
+    color: lightgrey;
+}
+
+.resume-pdf {
+    margin: 1rem;
+    width: 100%;
+    aspect-ratio: 8.5/11;
+}

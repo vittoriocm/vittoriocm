@@ -3,6 +3,9 @@
     margin: 0;
     background-color: black; 
     color: white; 
+    /*
+    border: red 1px solid;
+    */
 }
 
 html {
@@ -17,12 +20,18 @@ h1 {
     margin: 1rem 0;
 }
 
-h1 a {
+a {
     text-decoration: none;
 }
 
 body {
     width: 80%;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
 }
 
 header ul {
@@ -43,7 +52,37 @@ a:hover {
 }
 
 .resume-pdf {
-    margin: 1rem;
     width: 100%;
+    max-width: 1000px;
     aspect-ratio: 8.5/11;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    width: fit-content;
+}
+
+.flex-item img{
+    border-radius: 1rem;
+    width: 20rem;
+}
+
+.flex-item a {
+    text-decoration: none;
+}
+
+.flex-item a:hover figcaption{
+    color: lightgrey;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
 }
